@@ -1,0 +1,299 @@
+{
+  "full_name": "Стоматологическая клиника «32Дент»",
+  "short_name": "32Дент",
+  "legal_name": "Стоматологическая клиника \"32Дент\" ООО",
+  "UNP": "Информация о УНП не найдена",
+  "license": "Лицензия на медицинскую деятельность",
+  "founded": "2015-04-14",
+  "years_in_business": 10,
+  "description": "Современная стоматологическая клиника с 10-летним опытом работы в Рогачёве и Жлобине. Используем передовые технологии и современное оборудование американских производителей.",
+  "specialization": "Полный спектр стоматологических услуг",
+  "locations": [
+    {
+      "city": "Рогачёв",
+      "address": "ул. Ленина, 60",
+      "postal_code": "247670",
+      "region": "Гомельская область",
+      "country": "Беларусь",
+      "coordinates": {
+        "latitude": "53.1333",
+        "longitude": "30.0500"
+      },
+      "is_main": true
+    },
+    {
+      "city": "Жлобин",
+      "address": "ул. Петровского, 44, корп. 1",
+      "postal_code": "247210",
+      "region": "Гомельская область", 
+      "country": "Беларусь",
+      "coordinates": {
+        "latitude": "52.8925",
+        "longitude": "30.0358"
+      },
+      "is_main": false
+    }
+  ],
+  "contact_info": {
+    "phones": [
+      {
+        "number": "+375447444033",
+        "location": "Рогачёв",
+        "type": "mobile",
+        "is_primary": true
+      },
+      {
+        "number": "+375445595901", 
+        "location": "Жлобин",
+        "type": "mobile",
+        "is_primary": false
+      },
+      {
+        "number": "+375233927733",
+        "location": "Рогачёв",
+        "type": "landline",
+        "is_primary": false
+      }
+    ],
+    "emails": [
+      {
+        "email": "expert32dent@gmail.com",
+        "type": "general",
+        "is_primary": true
+      },
+      {
+        "email": "32dentplus@gmail.com",
+        "type": "appointments",
+        "is_primary": false
+      }
+    ],
+    "website": "32dent.by",
+    "social_media": [
+      {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/32_dent_stom/",
+        "handle": "@32_dent_stom",
+        "is_active": true
+      },
+      {
+        "platform": "Facebook", 
+        "url": "https://www.facebook.com/61560496372883",
+        "handle": "Стоматология 32Дент+",
+        "is_active": true
+      }
+    ]
+  },
+  "working_hours": {
+    "monday": "08:00-20:00",
+    "tuesday": "08:00-20:00", 
+    "wednesday": "08:00-20:00",
+    "thursday": "08:00-20:00",
+    "friday": "08:00-20:00",
+    "saturday": "По записи",
+    "sunday": "Выходной",
+    "timezone": "Europe/Minsk"
+  },
+  "services": [
+    {
+      "category": "Имплантация",
+      "services": [
+        "Эндооссальная имплантация зубов",
+        "Протезирование на имплантах",
+        "Безметалловые коронки на имплантах"
+      ],
+      "price_range": "850-950 BYN"
+    },
+    {
+      "category": "Протезирование",
+      "services": [
+        "Безметалловые коронки и виниры",
+        "Металлокерамические коронки",
+        "Съёмные протезы",
+        "Люминиры"
+      ],
+      "price_range": "320-650 BYN"
+    },
+    {
+      "category": "Лечение зубов",
+      "services": [
+        "Лечение кариеса",
+        "Лечение пульпита",
+        "Лечение периодонтита",
+        "Лечение под микроскопом",
+        "Реставрация зубов"
+      ],
+      "price_range": "50-200 BYN"
+    },
+    {
+      "category": "Ортодонтия",
+      "services": [
+        "Исправление прикуса",
+        "Установка брекет-систем",
+        "Элайнеры Star Smile"
+      ],
+      "price_range": "1500+ BYN"
+    },
+    {
+      "category": "Детская стоматология",
+      "services": [
+        "Лечение молочных зубов",
+        "Профилактика кариеса",
+        "Серебрение зубов"
+      ],
+      "price_range": "30-100 BYN"
+    },
+    {
+      "category": "Хирургия",
+      "services": [
+        "Удаление зубов",
+        "Хирургические вмешательства",
+        "Резекция верхушки корня"
+      ],
+      "price_range": "25-150 BYN"
+    },
+    {
+      "category": "Гигиена",
+      "services": [
+        "Профессиональная чистка зубов",
+        "Удаление зубного камня",
+        "Отбеливание зубов"
+      ],
+      "price_range": "50-200 BYN"
+    }
+  ],
+  "staff": [
+    {
+      "name": "Алексейчук Вячеслав Александрович",
+      "position": "Врач-ортопед",
+      "specialization": ["Протезирование", "Имплантация", "Виниры"],
+      "experience_years": 15,
+      "instagram": "@_i_slavik_i_"
+    },
+    {
+      "name": "Махонько Павел Александрович", 
+      "position": "Врач-хирург",
+      "specialization": ["Имплантация", "Хирургия", "Костная пластика"],
+      "experience_years": 12,
+      "instagram": "@makhonkopavel"
+    },
+    {
+      "name": "Сайковская Татьяна Васильевна",
+      "position": "Врач-терапевт", 
+      "specialization": ["Лечение под микроскопом", "Эндодонтия", "Реставрация"],
+      "experience_years": 10,
+      "instagram": null
+    },
+    {
+      "name": "Хмарская Оксана Ивановна",
+      "position": "Зубной техник",
+      "specialization": ["Протезирование", "Ортопедические конструкции"],
+      "experience_years": 8,
+      "instagram": "@sorokina_dent"
+    },
+    {
+      "name": "Макаров Иван Сергеевич",
+      "position": "Зубной техник",
+      "specialization": ["Безметалловые конструкции", "Циркониевые коронки"],
+      "experience_years": 6,
+      "instagram": null
+    }
+  ],
+  "equipment": {
+    "origin": "США",
+    "features": [
+      "Современное стоматологическое оборудование американских производителей",
+      "Щадящее рентген-оборудование с широким диапазоном возможностей",
+      "Микроскопы для точного лечения",
+      "Собственная зуботехническая лаборатория"
+    ]
+  },
+  "advantages": [
+    {
+      "title": "2 года гарантии",
+      "description": "На все виды стоматологических услуг"
+    },
+    {
+      "title": "Хорошее соотношение цены и качества",
+      "description": "Доступные цены при высоком качестве услуг"
+    },
+    {
+      "title": "Собственная зуботехническая лаборатория",
+      "description": "Изготовление протезов на месте, контроль качества"
+    },
+    {
+      "title": "Гибкий график работы",
+      "description": "Удобное время записи, работаем до 20:00"
+    },
+    {
+      "title": "Страховое партнёрство",
+      "description": "Сотрудничество со страховой компанией «Белэксимгарант»"
+    },
+    {
+      "title": "Уютный интерьер",
+      "description": "Комфортная атмосфера для пациентов"
+    },
+    {
+      "title": "Центральное расположение",
+      "description": "Удобное расположение в центре города"
+    }
+  ],
+  "insurance": {
+    "partner": "Белэксимгарант",
+    "coverage": "Частичное покрытие стоматологических услуг"
+  },
+  "currency": "BYN",
+  "languages": ["Русский", "Белорусский"],
+  "payment_methods": ["Наличные", "Банковские карты"],
+  "verified_sources": [
+    {
+      "source": "Instagram",
+      "url": "https://www.instagram.com/32_dent_stom/",
+      "verification_date": "2024-01-15",
+      "status": "active"
+    },
+    {
+      "source": "Facebook",
+      "url": "https://www.facebook.com/61560496372883", 
+      "verification_date": "2024-01-15",
+      "status": "active"
+    },
+    {
+      "source": "103.by",
+      "url": "https://32dent.103.by/",
+      "verification_date": "2024-01-15", 
+      "status": "active"
+    },
+    {
+      "source": "relax.by",
+      "url": "https://32dent.relax.by/",
+      "verification_date": "2024-01-15",
+      "status": "active"
+    },
+    {
+      "source": "talon.by",
+      "url": "https://talon.by/policlinic/32-dent-rogachev",
+      "verification_date": "2024-01-15",
+      "status": "active"
+    }
+  ],
+  "seo_keywords": [
+    "стоматология Рогачёв",
+    "стоматология Жлобин", 
+    "зубной врач",
+    "имплантация зубов",
+    "протезирование зубов",
+    "лечение зубов",
+    "ортодонтия",
+    "брекеты",
+    "виниры",
+    "стоматологическая клиника",
+    "32 дент",
+    "32dent"
+  ],
+  "awards": [],
+  "certifications": [
+    "Лицензия на медицинскую деятельность"
+  ],
+  "last_updated": "2024-01-15T10:00:00Z",
+  "data_quality": "verified_partial"
+}

@@ -1,0 +1,556 @@
+/* =====================================
+   32Дент - Адаптивные стили
+   ===================================== */
+
+/* Планшеты (1024px и меньше) */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 24px;
+    }
+
+    /* Хедер */
+    .nav-menu {
+        gap: 24px;
+    }
+
+    .nav-actions .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* Герой */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 100px;
+        gap: 60px;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .hero-stats {
+        justify-content: center;
+        gap: 32px;
+    }
+
+    /* О клинике */
+    .about-content {
+        gap: 60px;
+    }
+
+    /* Контакты */
+    .contact-content {
+        gap: 60px;
+    }
+
+    /* Услуги */
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 24px;
+    }
+
+    /* Врачи */
+    .doctors-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 24px;
+    }
+}
+
+/* Мобильные устройства (768px и меньше) */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    /* Хедер */
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background: var(--background-white);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        transition: var(--transition);
+        z-index: 1001;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu .nav-link {
+        font-size: 1.25rem;
+    }
+
+    .nav-actions {
+        flex-direction: column;
+        gap: 12px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 100px);
+        opacity: 0;
+        visibility: hidden;
+        transition: var(--transition);
+        z-index: 1002;
+    }
+
+    .nav-menu.active ~ .nav-actions {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .hamburger {
+        display: flex;
+        z-index: 1003;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+
+    /* Герой */
+    .hero {
+        padding-top: 80px;
+        min-height: auto;
+        padding-bottom: 60px;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-description {
+        font-size: 1.125rem;
+    }
+
+    .hero-actions {
+        width: 100%;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+    }
+
+    .stat-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+    }
+
+    /* Секции */
+    .services,
+    .about,
+    .doctors,
+    .contact {
+        padding: 80px 0;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
+    /* Услуги */
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .service-card {
+        padding: 24px;
+    }
+
+    /* О клинике */
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .image-grid img {
+        height: 200px;
+    }
+
+    /* Врачи */
+    .doctors-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .doctor-photo {
+        height: 240px;
+    }
+
+    .doctor-info {
+        padding: 20px;
+    }
+
+    /* Контакты */
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contact-info {
+        gap: 20px;
+    }
+
+    .contact-card {
+        padding: 20px;
+    }
+
+    /* Формы */
+    .form-container {
+        padding: 24px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    /* Футер */
+    .footer {
+        padding: 40px 0 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .footer-links-bottom {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    /* Модальные окна */
+    .modal-content {
+        width: 95%;
+        margin: 20px;
+    }
+
+    .modal-header {
+        padding: 20px 20px 0;
+    }
+
+    .modal-body {
+        padding: 0 20px 20px;
+    }
+
+    /* Кнопка наверх */
+    .scroll-to-top {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+/* Малые мобильные устройства (480px и меньше) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 12px;
+    }
+
+    /* Герой */
+    .hero-title {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    /* Секции */
+    .services,
+    .about,
+    .doctors,
+    .contact {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    /* Услуги */
+    .service-card {
+        padding: 20px;
+    }
+
+    .service-title {
+        font-size: 1.25rem;
+    }
+
+    .service-icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    .service-icon i {
+        font-size: 20px;
+    }
+
+    /* Карточки врачей */
+    .doctor-card {
+        margin-bottom: 20px;
+    }
+
+    .doctor-photo {
+        height: 200px;
+    }
+
+    .doctor-name {
+        font-size: 1.125rem;
+    }
+
+    /* Контакты */
+    .contact-card {
+        padding: 16px;
+    }
+
+    .contact-item {
+        font-size: 0.9rem;
+    }
+
+    /* Формы */
+    .form-container {
+        padding: 20px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .btn-large {
+        padding: 14px 28px;
+        font-size: 15px;
+    }
+
+    /* Футер */
+    .footer {
+        padding: 30px 0 15px;
+    }
+
+    .footer-content {
+        gap: 24px;
+        margin-bottom: 24px;
+    }
+
+    .footer-section h4 {
+        font-size: 1rem;
+    }
+
+    .working-hours {
+        gap: 6px;
+    }
+
+    .hours-item {
+        font-size: 0.8rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+    }
+}
+
+/* Очень малые экраны (360px и меньше) */
+@media (max-width: 360px) {
+    .hero-title {
+        font-size: 1.75rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .service-card,
+    .contact-card,
+    .form-container {
+        padding: 16px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    .btn-large {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+}
+
+/* Ландшафтная ориентация для мобильных */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 100px 0 40px;
+    }
+
+    .hero-title {
+        font-size: 2.25rem;
+    }
+
+    .hero-stats {
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    .nav-menu {
+        justify-content: flex-start;
+        padding-top: 100px;
+    }
+}
+
+/* Улучшения для touch устройств */
+@media (hover: none) and (pointer: coarse) {
+    .btn:hover,
+    .nav-link:hover,
+    .service-card:hover,
+    .doctor-card:hover {
+        transform: none;
+    }
+
+    .btn:active {
+        transform: scale(0.98);
+    }
+
+    /* Увеличиваем области касания */
+    .nav-link {
+        padding: 12px 8px;
+    }
+
+    .social-icon,
+    .close {
+        min-width: 44px;
+        min-height: 44px;
+    }
+
+    .hamburger {
+        padding: 8px;
+    }
+}
+
+/* Высокие экраны */
+@media (min-height: 900px) {
+    .hero {
+        min-height: 90vh;
+    }
+}
+
+/* Широкие экраны */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+}
+
+/* Печать */
+@media print {
+    .header,
+    .hamburger,
+    .scroll-to-top,
+    .modal,
+    .hero-actions,
+    .btn {
+        display: none !important;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+
+    .hero {
+        padding-top: 0;
+        min-height: auto;
+    }
+
+    .services,
+    .about,
+    .doctors,
+    .contact {
+        padding: 30px 0;
+    }
+
+    .service-card,
+    .doctor-card,
+    .contact-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}
